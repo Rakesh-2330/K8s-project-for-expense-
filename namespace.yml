@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+    name: expence
+    label: backend
+spec:
+  containers:
+  - name: nginx
+  - image: nginx
