@@ -3,9 +3,8 @@ kind: Pod
 metadata:
   name: labels
   labels:
-    project: expence
-    module: backed
-    envernment: dev
+    name: k8
+    teainer: Rakesh
 spec:
   containers:
   - name: nginx
