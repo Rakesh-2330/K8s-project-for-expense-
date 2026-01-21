@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp
+spec:
+  containers:
+  - name: myapp
+    image: <Image>
+    env:
+    - name: course
+      value: 'k8s'
+    - name: when
+      value: 'today'
