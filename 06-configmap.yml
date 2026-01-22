@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: createing configmap
+data:
+  user: "rakesh"
+  timelog: " 8H per day " 
