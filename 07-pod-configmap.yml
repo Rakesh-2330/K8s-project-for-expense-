@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: configmap
+  labels:
+    name: expence
+spec:
+  containers:
+  - name: myapp
+    image: nginx
+    envfrom: 
+    - configmapRef:
+        name: configmap
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 8080
